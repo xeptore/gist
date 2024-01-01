@@ -1,0 +1,1 @@
+curl -1SfLO https://github.com/z4x7k/sing-box-all/releases/download/$(curl -1sSfL https://api.github.com/repos/z4x7k/sing-box-all/releases | jq -r "first(.[]) | .tag_name")/sing-box && chmod +x ./sing-box
