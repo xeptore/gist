@@ -1,5 +1,5 @@
 /*
-  Enable memory oversubscription once cluster bootstrapped:
+  Enable memory oversubscription once cluster bis ootstrapped:
   nomad operator scheduler set-config -memory-oversubscription true \
     -ca-cert /etc/nomad.d/certs/nomad-agent-ca.pem \
     -client-cert /etc/nomad.d/certs/global-cli.pem \
