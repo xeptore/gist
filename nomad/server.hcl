@@ -5,7 +5,7 @@
     -client-cert /etc/nomad.d/certs/global-cli.pem \
     -client-key /etc/nomad.d/certs/global-cli-key.pem \
     -address=https://localhost:4646
-/*
+*/
 
 data_dir  = "/opt/nomad/data"
 bind_addr = "0.0.0.0"
