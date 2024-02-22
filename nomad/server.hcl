@@ -1,3 +1,12 @@
+/*
+  Enable memory oversubscription once cluster bootstrapped:
+  nomad operator scheduler set-config -memory-oversubscription true \
+    -ca-cert /etc/nomad.d/certs/nomad-agent-ca.pem \
+    -client-cert /etc/nomad.d/certs/global-cli.pem \
+    -client-key /etc/nomad.d/certs/global-cli-key.pem \
+    -address=https://localhost:4646
+/*
+
 data_dir  = "/opt/nomad/data"
 bind_addr = "0.0.0.0"
 log_level = "WARN"
