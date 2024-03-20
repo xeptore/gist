@@ -1,0 +1,19 @@
+table ip v2ray {
+    chain prerouting {
+        type filter hook prerouting priority filter; policy accept;
+        ip daddr { 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.168.0.0/16, 224.0.0.0/3 } return
+        meta l4proto { tcp, udp } meta mark set 0x00000001 tproxy to 127.0.0.1:12345 accept
+    }
+    chain output {
+        type route hook output priority filter; policy accept;
+        ip daddr { 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.168.0.0/16, 224.0.0.0/3 } return
+        meta mark 0x00000002 return
+        meta l4proto { tcp, udp } meta mark set 0x00000001 accept
+    }
+}
+table ip filter {
+    chain divert {
+        type filter hook prerouting priority mangle; policy accept;
+        meta l4proto tcp socket transparent 1 meta mark set 0x00000001 accept
+    }
+}
