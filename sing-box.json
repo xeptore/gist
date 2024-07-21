@@ -1,0 +1,112 @@
+{
+  "log": {
+    "level": "error",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "local",
+        "address": "udp://127.0.1.1",
+        "strategy": "prefer_ipv4",
+        "detour": "direct"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun",
+      "interface_name": "tun0",
+      "address": [
+        "172.18.0.1/30"
+      ],
+      "gso": false,
+      "auto_route": true,
+      "auto_redirect": true,
+      "mtu": 1500,
+      "strict_route": true,
+      "udp_timeout": "5s",
+      "stack": "system",
+      "sniff": true,
+      "sniff_override_destination": true,
+      "sniff_timeout": "300ms"
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 10800
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rules": [
+      {
+        "inbound": [
+          "tun"
+        ],
+        "source_ip_cidr": [
+          "172.18.0.1/32"
+        ],
+        "ip_cidr": [
+          "172.18.0.2/32"
+        ],
+        "protocol": "dns",
+        "outbound": "dns"
+      },
+      {
+        "rule_set": [
+          "geosite-category-public-tracker",
+          "geosite-category-ads",
+          "geosite-category-ads-all"
+        ],
+        "outbound": "block"
+      },
+      {
+        "rule_set": [
+          "ir",
+          "geoip-ir",
+          "geosite-category-ads-ir",
+          "geosite-category-bank-ir",
+          "geosite-category-bourse-ir",
+          "geosite-category-education-ir",
+          "geosite-category-forums-ir",
+          "geosite-category-gov-ir",
+          "geosite-category-insurance-ir",
+          "geosite-category-ir",
+          "geosite-category-media-ir",
+          "geosite-category-news-ir",
+          "geosite-category-payment-ir",
+          "geosite-category-scholar-ir",
+          "geosite-category-shopping-ir",
+          "geosite-category-social-media-ir",
+          "geosite-category-tech-ir",
+          "geosite-category-travel-ir"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "inbound": [
+          "mixed",
+          "tun"
+        ],
+        "outbound": "direct"
+      }
+    ]
+  }
+}
