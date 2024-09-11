@@ -128,104 +128,6 @@
         "download_detour": "direct"
       },
       {
-        "tag": "geosite-acfun-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-acfun-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-adblockplus",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-adblockplus.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-adcolony-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-adcolony-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-adjust-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-adjust-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-adobe-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-adobe-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-alibaba-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-alibaba-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-amazon-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-amazon-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-apple-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-applovin-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-applovin-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-atom-data-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-atom-data-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-baidu-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-baidu-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-bytedance-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-bytedance-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-category-ads-all",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-category-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads.srs",
-        "download_detour": "direct"
-      },
-      {
         "tag": "geosite-category-public-tracker",
         "type": "remote",
         "format": "binary",
@@ -233,340 +135,466 @@
         "download_detour": "direct"
       },
       {
-        "tag": "geosite-clearbitjs-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-clearbitjs-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-dmm-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-dmm-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-emogi-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-emogi-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-entermediadb",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-entermediadb.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-flurry-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-flurry-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-google-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-growingio-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-growingio-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-hiido-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hiido-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-hotjar-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hotjar-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-hunantv-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hunantv-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-inner-active-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-inner-active-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-inoreader",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-inoreader.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-iqiyi-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-iqiyi-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-jd-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-jd-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-kuaishou-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-kuaishou-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-kugou-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-kugou-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-leanplum-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-leanplum-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-letv-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-letv-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-mixpanel-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mixpanel-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-mopub-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mopub-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-mxplayer-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mxplayer-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-netease-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netease-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-newrelic-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-newrelic-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-ogury-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ogury-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-onesignal-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-onesignal-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-ookla-speedtest-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ookla-speedtest-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-openx-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-openx-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-pocoiq-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-pocoiq-ads.srs",
-        "download_detour": "direct"
-      },
-      {
+        "download_detour": "direct",
         "tag": "geosite-pubmatic-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-pubmatic-ads.srs",
-        "download_detour": "direct"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-pubmatic-ads.srs"
       },
       {
-        "tag": "geosite-segment-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-segment-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-atom-data-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-atom-data-ads.srs"
       },
       {
-        "tag": "geosite-sensorsdata-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-sensorsdata-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-meta-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-meta-ads.srs"
       },
       {
-        "tag": "geosite-sina-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-sina-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-ogury-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ogury-ads.srs"
       },
       {
-        "tag": "geosite-sohu-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-sohu-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-jd-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-jd-ads.srs"
       },
       {
-        "tag": "geosite-spotify-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-spotify-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-adobe-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-adobe-ads.srs"
       },
       {
-        "tag": "geosite-supersonic-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-supersonic-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-tagtic-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tagtic-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-tappx-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tappx-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-tencent-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tencent-ads.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-uberads-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-uberads-ads.srs",
-        "download_detour": "direct"
-      },
-      {
+        "download_detour": "direct",
         "tag": "geosite-umeng-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-umeng-ads.srs",
-        "download_detour": "direct"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-umeng-ads.srs"
       },
       {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-xiaomi-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-xiaomi-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-hiido-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hiido-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-sohu-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-sohu-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-tencent-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tencent-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-television-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-television-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-hunantv-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hunantv-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-ookla-speedtest-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ookla-speedtest-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-bytedance-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-bytedance-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-sina-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-sina-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-qihoo360-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-qihoo360-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-clearbitjs-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-clearbitjs-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-acfun-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-acfun-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-newrelic-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-newrelic-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-leanplum-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-leanplum-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-hotjar-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-hotjar-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-growingio-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-growingio-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-pocoiq-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-pocoiq-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-instagram-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-instagram-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-tagtic-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tagtic-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-emogi-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-emogi-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
         "tag": "geosite-unity-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-unity-ads.srs",
-        "download_detour": "direct"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-unity-ads.srs"
       },
       {
-        "tag": "geosite-wteam-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-wteam-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-category-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads.srs"
       },
       {
-        "tag": "geosite-xhamster-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-xhamster-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-spotify-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-spotify-ads.srs"
       },
       {
-        "tag": "geosite-xiaomitv-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-xiaomitv-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-adcolony-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-adcolony-ads.srs"
       },
       {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-kugou-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-kugou-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-tappx-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-tappx-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-dmm-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-dmm-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-segment-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-segment-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
         "tag": "geosite-ximalaya-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ximalaya-ads.srs",
-        "download_detour": "direct"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-ximalaya-ads.srs"
       },
       {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-amazon-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-amazon-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-facebook-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-facebook-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-openx-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-openx-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-flurry-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-flurry-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-letv-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-letv-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
         "tag": "geosite-yahoo-ads",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-yahoo-ads.srs",
-        "download_detour": "direct"
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-yahoo-ads.srs"
       },
       {
-        "tag": "geosite-youku-ads",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-youku-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-alibaba-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-alibaba-ads.srs"
       },
       {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-adjust-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-adjust-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
         "tag": "geosite-zynga-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-zynga-ads.srs"
+      },
+      {
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-zynga-ads.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "tag": "geosite-google-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-google-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-whatsapp-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-whatsapp-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-iqiyi-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-iqiyi-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-inner-active-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-inner-active-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-category-ads-all",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-kuaishou-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-kuaishou-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-mixpanel-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mixpanel-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-duolingo-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-duolingo-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-uberads-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-uberads-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-wteam-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-wteam-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-youku-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-youku-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-netease-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netease-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-applovin-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-applovin-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-apple-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-apple-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-onesignal-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-onesignal-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-mxplayer-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mxplayer-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-sensorsdata-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-sensorsdata-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-xhamster-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-xhamster-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-supersonic-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-supersonic-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-baidu-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-baidu-ads.srs"
+      },
+      {
+        "type": "remote",
+        "format": "binary",
+        "download_detour": "direct",
+        "tag": "geosite-mopub-ads",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-mopub-ads.srs"
       }
     ]
   },
