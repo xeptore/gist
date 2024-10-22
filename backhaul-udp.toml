@@ -1,0 +1,23 @@
+# Use this block on the server with public IP (Iran)
+[server]
+bind_addr = "0.0.0.0:3099"
+transport = "udp"
+token = "???"
+heartbeat = 20
+channel_size = 2048
+sniffer = false
+log_level = "error"
+ports = [
+  "127.0.0.1:6000=6000",
+  "4490=127.0.0.1:51820",
+]
+
+# Use this block on the host behind nat or with private IP (proxy server)
+[client]
+remote_addr = "server-ip:3099"
+transport = "udp"
+token = "???"
+connection_pool = 8
+retry_interval = 3
+sniffer = false
+log_level = "error"
