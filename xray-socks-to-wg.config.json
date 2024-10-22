@@ -1,0 +1,30 @@
+{
+  "log": {
+    "access": "none",
+    "error": "none",
+    "loglevel": "error"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": "10807",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "ip": "127.0.0.1"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "streamSettings": {
+        "sockopt": {
+          "interface": "wg0"
+        }
+      },
+      "sendThrough": "172.16.0.2/32"
+    }
+  ]
+}
