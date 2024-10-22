@@ -1,4 +1,4 @@
-cat >/etc/systemd/system/xray.service <<EOF
+cat <<EOF
 [Unit]
 Description=Xray Service
 Documentation=https://github.com/xtls
