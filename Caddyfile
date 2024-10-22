@@ -1,0 +1,10 @@
+gist.xeptore.dev {
+	reverse_proxy https://raw.githubusercontent.com {
+		method GET
+		rewrite /xeptore/gist/refs/heads/main{path}
+		header_up Host
+		header_up X-Forwarded-For
+		header_up X-Forwarded-Proto
+		header_up X-Forwarded-Host
+	}
+}
