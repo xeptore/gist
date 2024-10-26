@@ -1,0 +1,13 @@
+# ~/.config/systemd/user/miniserve.service
+[Unit]
+Description=Miniserve Musics File Server
+Documentation=https://github.com/svenstaro/miniserve
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/kirby/miniserve --port 8080 --interfaces 127.0.0.1 --color-scheme zenburn --color-scheme-dark zenburn --title 'z4x7k Musics' --hide-theme-selector --hide-version-footer --show-wget-footer /home/kirby/musics/
+TimeoutStopSec=5s
+
+[Install]
+WantedBy=default.target
