@@ -1,0 +1,16 @@
+[Unit]
+Description=Dnsproxy Service for %I
+Documentation=https://github.com/AdguardTeam/dnsproxy
+Requires=wg-quick@wgdns.service
+After=network.target nss-lookup.target wg-quick@wgdns.service
+
+[Service]
+ExecStart=/root/dnsproxy/dnsproxy --config-path /root/dnsproxy/%i.yaml
+WorkingDirectory=/root/dnsproxy
+Restart=on-failure
+RestartSec=3
+LimitNPROC=infinity
+LimitNOFILE=infinity
+
+[Install]
+WantedBy=multi-user.target
