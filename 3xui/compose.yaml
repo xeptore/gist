@@ -1,0 +1,56 @@
+name: 3xui
+services:
+  proxy-relay:
+    image: docker.io/alpine/socat:latest
+    network_mode: host
+    command: TCP-LISTEN:10801,fork,bind=host.docker.internal TCP-CONNECT:127.0.0.1:10801
+    extra_hosts:
+      - host.docker.internal:host-gateway
+  3xui:
+    image: ghcr.io/mhsanaei/3x-ui:latest
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: ./db/
+        target: /etc/x-ui/
+        read_only: false
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./cert/
+        target: /root/cert/
+        read_only: false
+        bind:
+          create_host_path: false
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    networks:
+      3xui:
+        ipv4_address: 172.31.0.2
+    environment:
+      XRAY_VMESS_AEAD_FORCED: "false"
+      XUI_ENABLE_FAIL2BAN: "true"
+    ports:
+      - name: web
+        target: 2053
+        host_ip: 127.0.0.1
+        published: "2053"
+        protocol: tcp
+        app_protocol: http
+        mode: host
+      - name: vless
+        target: 2054
+        host_ip: 127.0.0.1
+        published: "2054"
+        protocol: tcp
+        app_protocol: http
+        mode: host
+networks:
+  3xui:
+    driver: bridge
+    name: 3xui
+    driver_opts:
+      com.docker.network.bridge.name: br-3xui0
+    ipam:
+      config:
+        - subnet: 172.31.0.0/24
