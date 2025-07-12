@@ -1,0 +1,32 @@
+name: teamspeak
+services:
+  teamspeak:
+    image: docker.io/library/teamspeak:latest
+    pull_policy: always
+    restart: unless-stopped
+    environment:
+      TS3SERVER_LICENSE: accept
+    ports:
+      - target: 9987
+        host_ip: 0.0.0.0
+        published: 9987
+        protocol: udp
+      - target: 10011
+        host_ip: 0.0.0.0
+        published: 10011
+        protocol: tcp
+      - target: 30033
+        host_ip: 0.0.0.0
+        published: 30033
+        protocol: tcp
+    volumes:
+      - type: bind
+        # Make sure source directory is owned by tgtd process uid:gid 
+        # Can be found using:
+        #   stat -c "%u %g" /proc/$(pidof ts3server)/
+        # Which usually is: 9987
+        source: ./data
+        target: /var/ts3server/
+        read_only: false
+        bind:
+          create_host_path: false
