@@ -2,6 +2,7 @@ name: 3xui
 services:
   proxy-relay:
     image: docker.io/alpine/socat:latest
+    restart: unless-stopped
     network_mode: host
     command: TCP-LISTEN:10801,fork,bind=host.docker.internal TCP-CONNECT:127.0.0.1:10801
     extra_hosts:
