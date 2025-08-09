@@ -1,0 +1,51 @@
+[
+  {
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorrent"
+    ],
+    "enabled": true,
+    "remarks": "Bypass Bittorrent"
+  },
+  {
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all",
+      "geosite:category-public-tracker"
+    ],
+    "enabled": true,
+    "remarks": "Block Ads & Trackers"
+  },
+  {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
+    ],
+    "enabled": true,
+    "remarks": "Bypass Private IPs"
+  },
+  {
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:private"
+    ],
+    "enabled": true,
+    "remarks": "Bypass Private Domains"
+  },
+  {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:ir"
+    ],
+    "enabled": true,
+    "remarks": "Bypass IR IPs"
+  },
+  {
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:category-ir"
+    ],
+    "enabled": true,
+    "remarks": "Bypass IR Domains"
+  }
+]
