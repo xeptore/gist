@@ -1,13 +1,5 @@
 [
   {
-    "outboundTag": "direct",
-    "protocol": [
-      "bittorrent"
-    ],
-    "enabled": true,
-    "remarks": "Bypass Bittorrent"
-  },
-  {
     "outboundTag": "block",
     "domain": [
       "geosite:category-ads-all",
@@ -31,6 +23,14 @@
     ],
     "enabled": true,
     "remarks": "Bypass Private Domains"
+  },
+  {
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorrent"
+    ],
+    "enabled": true,
+    "remarks": "Bypass Bittorrent"
   },
   {
     "outboundTag": "direct",
