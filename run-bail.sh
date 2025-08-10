@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Simple "run" function:
 # - Logs the command and arguments
 # - Runs directly (no extra shell)
 # - Exits on any failure
