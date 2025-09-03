@@ -1,7 +1,12 @@
 #!/bin/bash
 
 run() {
-  local snippet="$*"
+  local snippet
+  if (($#)); then
+    snippet="$*"
+  else
+    snippet="$(cat)"  # read from stdin (heredoc)
+  fi
 
   # Preview: substitute environment variables for display only (no $(...))
   if command -v envsubst >/dev/null 2>&1; then
