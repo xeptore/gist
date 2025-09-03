@@ -55,3 +55,8 @@ run 'curl -sfL --tlsv1.3 -o /etc/systemd/system/rathole@.service https://gist.xe
 run 'curl -sfL --tlsv1.3 -o /etc/systemd/system/sing-box@.service https://gist.xeptore.dev/systemd/sing-box@.service'
 
 run 'systemctl daemon-reload'
+
+run 'apt-get update'
+run 'apt-get upgrade -y'
+run 'apt-get autoremove -y'
+run 'apt-get clean -y'
