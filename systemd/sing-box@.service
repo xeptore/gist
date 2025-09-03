@@ -1,0 +1,16 @@
+[Unit]
+Description=Singbox Service for %I
+Documentation=https://github.com/SagerNet/sing-box
+After=network.target nss-lookup.target
+
+[Service]
+Type=simple
+ExecStart=/root/sing-box/sing-box run --config /root/sing-box/%i.json
+WorkingDirectory=/root/sing-box
+Restart=on-failure
+RestartSec=3
+
+LimitNOFILE=infinity
+
+[Install]
+WantedBy=multi-user.target
