@@ -5,6 +5,7 @@ set -euo pipefail
 # shellcheck disable=SC1090
 source <(curl -fsSL --proto '=https' --tlsv1.3 https://gist.xeptore.dev/run.sh)
 
+run <<BASH
 curl \
   -sSfL \
   --proto '=https' \
@@ -15,5 +16,6 @@ curl \
     -sSfL \
     --tlsv1.3 \
     --proto '=https' \
-    "https://github.com/Musixal/Backhaul/releases/download/{}/backhaul_linux_amd64.tar.gz" \
+    'https://github.com/Musixal/Backhaul/releases/download/{}/backhaul_linux_amd64.tar.gz' \
   | tar -xzf - backhaul
+BASH
