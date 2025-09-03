@@ -16,7 +16,7 @@ curl \
     -sSfL \
     --tlsv1.3 \
     -o rathole.zip \
-    'https://github.com/rathole/rathole/releases/download/{}/rathole-x86_64-unknown-linux-gnu.zip' \
+    'https://github.com/rathole-org/rathole/releases/download/{}/rathole-x86_64-unknown-linux-gnu.zip' \
   && unzip -qo rathole.zip \
   && rm rathole.zip
 BASH
