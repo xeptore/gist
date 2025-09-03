@@ -10,24 +10,7 @@ WorkingDirectory=/root/xray
 Restart=on-failure
 RestartSec=3
 
-# Make sure systemd doesn't apply its own resource limits
 LimitNOFILE=infinity
-LimitNPROC=infinity
-LimitCORE=infinity
-LimitMEMLOCK=infinity
-
-# Use the default Linux OOM adjustment (0)
-OOMScoreAdjust=0
-
-# Don't apply CPU/IO weight or block IO limits
-CPUWeight=100
-IOWeight=100
-IOSchedulingClass=2
-IOSchedulingPriority=4
-
-# Don't use systemd's cgroups resource control
-Delegate=yes
-Slice=system.slice
 
 [Install]
 WantedBy=multi-user.target
