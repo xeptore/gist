@@ -1,11 +1,11 @@
 [Unit]
-Description=Xray Service
+Description=Xray Service for %I
 Documentation=https://github.com/XTLS/Xray-core
 After=network.target nss-lookup.target
 
 [Service]
 Type=simple
-ExecStart=/root/xray/xray run --config /root/xray/config.json
+ExecStart=/root/xray/xray run --config /root/xray/%i.json
 WorkingDirectory=/root/xray
 Restart=on-failure
 RestartSec=3
