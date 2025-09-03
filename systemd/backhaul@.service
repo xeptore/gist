@@ -1,0 +1,16 @@
+[Unit]
+Description=Backhaul Service for %I
+Documentation=https://github.com/Musixal/Backhaul
+After=network.target nss-lookup.target
+
+[Service]
+Type=simple
+ExecStart=/root/backhaul/backhaul -c /root/backhaul/%i.toml
+WorkingDirectory=/root/backhaul
+Restart=on-failure
+RestartSec=3
+
+LimitNOFILE=infinity
+
+[Install]
+WantedBy=multi-user.target
