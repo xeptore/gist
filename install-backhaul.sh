@@ -14,5 +14,6 @@ curl \
   | xargs -I {} curl \
     -sSfL \
     --tlsv1.3 \
+    --proto '=https' \
     "https://github.com/Musixal/Backhaul/releases/download/{}/backhaul_linux_amd64.tar.gz" \
   | tar -xzf - backhaul
