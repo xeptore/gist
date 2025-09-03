@@ -8,7 +8,7 @@ apt-get update
 apt-get upgrade -y
 apt-get autoremove -y
 apt-get clean -y
-apt-get install -y jq net-tools unzip curl tree wireguard wireguard-tools
+apt-get install -y jq net-tools unzip curl tree wireguard wireguard-tools nload btop
 
 curl -sfL --tlsv1.3 -o .bash_profile https://gist.xeptore.dev/.bash_profile
 source .bash_profile
