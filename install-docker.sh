@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -exuo pipefail
+set -evuo pipefail
 
 # Add Docker's official GPG key:
 apt-get update
