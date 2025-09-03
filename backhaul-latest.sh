@@ -1,1 +1,0 @@
-curl -1SfL "https://github.com/musixal/backhaul/releases/download/$(curl -1sSfL 'https://api.github.com/repos/musixal/backhaul/releases?per_page=1&page=1' | jq -r 'first(.[]) | .tag_name')/backhaul_linux_amd64.tar.gz" | tar -xzvf - backhaul
