@@ -1,5 +1,5 @@
 [Unit]
-Description=Dnsproxy Service for %I
+Description=Adguard dnsproxy Service for %I
 Documentation=https://github.com/AdguardTeam/dnsproxy
 After=network.target nss-lookup.target
 
