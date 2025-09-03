@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -exuo pipefail
+set -evuo pipefail
 
 apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
 curl -1sSLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | gpg --dearmor --yes --output /usr/share/keyrings/caddy-stable-archive-keyring.gpg
