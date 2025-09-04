@@ -12,11 +12,8 @@ source <(curl -fsSL --proto '=https' --tlsv1.3 https://gist.xeptore.dev/run.sh)
 
 run 'cd /root'
 
-run 'apt-get update'
-run 'apt-get upgrade -y'
-run 'apt-get autoremove -y'
-run 'apt-get clean -y'
-run 'apt-get install -y jq net-tools unzip curl tree wireguard wireguard-tools nload btop'
+run 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
+run 'apt install -y jq net-tools unzip curl tree wireguard wireguard-tools nload btop'
 
 run 'curl -sfL --tlsv1.3 --proto '=https' -o .bash_profile https://gist.xeptore.dev/.bash_profile'
 run 'source .bash_profile'
@@ -115,9 +112,6 @@ EOF
 chmod +x ~/ipv6-enable.sh
 BASH
 
-for _ in $(seq 1 3); do
-  run 'apt-get update'
-  run 'apt-get upgrade -y'
-  run 'apt-get autoremove -y'
-  run 'apt-get clean -y'
-done
+run 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
+run 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
+run 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
