@@ -80,6 +80,9 @@ if=?
 
 ufw rule allow in on "\$if" proto tcp to "\$ip/32" port ? comment 'SSH'
 
+ufw rule allow in on "\$if" proto tcp from ? to "\$ip/32" port ? comment 'Rathole - Tunnel'
+ufw rule allow in on "\$if" proto tcp to "\$ip/32" port ? comment 'Rathole - X'
+
 ufw rule allow in on "\$if" proto tcp to "\$ip/32" port 80 comment 'HTTP'
 ufw rule allow in on "\$if" proto tcp to "\$ip/32" port 443 comment 'HTTPS'
 EOF
