@@ -75,6 +75,8 @@ set -euxo pipefail
 ip=?
 if=?
 
+ufw reset
+
 ufw rule allow in on "\$if" proto tcp to "\$ip/32" port ? comment 'SSH'
 
 ufw rule allow in on "\$if" proto tcp from ? to "\$ip/32" port ? comment 'Rathole - Tunnel'
@@ -111,6 +113,8 @@ sysctl -w net.ipv6.conf.lo.disable_ipv6=0
 EOF
 chmod +x ~/ipv6-enable.sh
 BASH
+
+run 'systemctl disable --now unattended-upgrades.service'
 
 run 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
 run 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
