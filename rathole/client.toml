@@ -1,0 +1,23 @@
+[client]
+remote_addr = ""
+retry_interval = 13
+
+[client.transport]
+type = "tcp"
+
+[client.transport.tcp]
+nodelay = true
+keepalive_secs = 20
+keepalive_interval = 8
+
+[client.services.socks]
+type = "tcp"
+token = ""
+local_addr = "127.0.0.1:10801"
+nodelay = true
+
+[client.services.vless]
+type = "tcp"
+token = ""
+local_addr = "127.0.0.1:10802"
+nodelay = true
