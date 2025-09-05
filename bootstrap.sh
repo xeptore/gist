@@ -114,6 +114,11 @@ EOF
 chmod +x ~/ipv6-enable.sh
 BASH
 
+run <<BASH
+cat>~/.tmux.conf <<EOF
+set -g default-terminal "screen"
+BASH
+
 run 'systemctl disable --now unattended-upgrades.service'
 
 run 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
