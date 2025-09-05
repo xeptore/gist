@@ -16,8 +16,14 @@ token = ""
 local_addr = "127.0.0.1:10801"
 nodelay = true
 
-[client.services.vless]
+[client.services.http]
 type = "tcp"
 token = ""
 local_addr = "127.0.0.1:10802"
+nodelay = true
+
+[client.services.vless]
+type = "tcp"
+token = ""
+local_addr = "127.0.0.1:10803"
 nodelay = true
