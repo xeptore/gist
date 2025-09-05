@@ -121,6 +121,7 @@ BASH
 run <<'BASH'
 cat>~/.tmux.conf <<'EOF'
 set -g default-terminal "screen"
+EOF
 BASH
 
 run 'systemctl disable --now unattended-upgrades.service'
