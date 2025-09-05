@@ -1,0 +1,27 @@
+bootstrap:
+  - udp://1.1.1.1:53
+  - udp://1.1.1.2:53
+  - udp://8.8.8.8:53
+  - udp://4.2.2.4:53
+cache: true
+cache-size: 4096
+ipv6-disabled: true
+listen-addrs:
+  - 127.0.0.2
+listen-port:
+  - 53
+refuse-any: true
+udp-buf-size: 65536
+upstream:
+  # https://mullvad.net/en/help/dns-over-https-and-dns-over-tls
+  - https://base.dns.mullvad.net/dns-query
+  # https://adguard-dns.io/en/public-dns.html
+  - https://dns.adguard-dns.com/dns-query
+  # https://cleanbrowsing.org/filters
+  - https://doh.cleanbrowsing.org/doh/security-filter/
+  # https://quad9.net/service/service-addresses-and-features/
+  - https://dns11.quad9.net/dns-query
+  # https://controld.com/free-dns
+  - https://freedns.controld.com/p2
+upstream-mode: load_balance
+verbose: false
