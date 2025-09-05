@@ -32,15 +32,19 @@ run 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install-lego
 
 run 'mkcd /root/xray'
 run 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install-xray.sh | bash'
+run 'curl -sSfL --tlsv1.3 --proto '=https' -o server.json https://gist.xeptore.dev/xray/server.json'
 
 run 'mkcd /root/rathole'
 run 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install-rathole.sh | bash'
+run 'curl -sSfL --tlsv1.3 --proto '=https' -o server.toml https://gist.xeptore.dev/rathole/server.toml'
+run 'curl -sSfL --tlsv1.3 --proto '=https' -o client.toml https://gist.xeptore.dev/rathole/client.toml'
 
 run 'mkcd /root/backhaul'
 run 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install-backhaul.sh | bash'
 
 run 'mkcd /root/dnsproxy'
 run 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install-dnsproxy.sh | bash'
+run 'curl -sSfL --tlsv1.3 --proto '=https' -o config.yaml https://gist.xeptore.dev/dnsproxy/config.yaml'
 
 run 'mkcd /root/sing-box'
 run 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install-sing-box.sh | bash'
@@ -55,8 +59,8 @@ run 'systemctl daemon-reload'
 
 run 'curl -sfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/etc/sysctl.d/99-proxy.conf -o /etc/sysctl.d/99-proxy.conf'
 
-run <<BASH
-cat>~/.vimrc <<EOF
+run <<'BASH'
+cat>~/.vimrc <<'EOF'
 set nu rnu nowrap
 syntax on
 set cursorline
@@ -66,8 +70,8 @@ set showmode
 EOF
 BASH
 
-run <<BASH
-cat>~/ufw.sh <<EOF
+run <<'BASH'
+cat>~/ufw.sh <<'EOF'
 #!/bin/bash
 
 set -euxo pipefail
@@ -77,19 +81,19 @@ if=?
 
 ufw reset
 
-ufw rule allow in on "\$if" proto tcp to "\$ip/32" port ? comment 'SSH'
+ufw rule allow in on "$if" proto tcp to "$ip/32" port ? comment 'SSH'
 
-ufw rule allow in on "\$if" proto tcp from ? to "\$ip/32" port ? comment 'Rathole - Tunnel'
-ufw rule allow in on "\$if" proto tcp to "\$ip/32" port ? comment 'Rathole - X'
+ufw rule allow in on "$if" proto tcp from ? to "$ip/32" port ? comment 'Rathole - Tunnel'
+ufw rule allow in on "$if" proto tcp to "$ip/32" port ? comment 'Rathole - X'
 
-ufw rule allow in on "\$if" proto tcp to "\$ip/32" port 80 comment 'HTTP'
-ufw rule allow in on "\$if" proto tcp to "\$ip/32" port 443 comment 'HTTPS'
+ufw rule allow in on "$if" proto tcp to "$ip/32" port 80 comment 'HTTP'
+ufw rule allow in on "$if" proto tcp to "$ip/32" port 443 comment 'HTTPS'
 EOF
 chmod +x ~/ufw.sh
 BASH
 
-run <<BASH
-cat>~/ipv6-disable.sh <<EOF
+run <<'BASH'
+cat>~/ipv6-disable.sh <<'EOF'
 #!/bin/bash
 
 set -euxo pipefail
@@ -101,8 +105,8 @@ EOF
 chmod +x ~/ipv6-disable.sh
 BASH
 
-run <<BASH
-cat>~/ipv6-enable.sh <<EOF
+run <<'BASH'
+cat>~/ipv6-enable.sh <<'EOF'
 #!/bin/bash
 
 set -euxo pipefail
@@ -114,8 +118,8 @@ EOF
 chmod +x ~/ipv6-enable.sh
 BASH
 
-run <<BASH
-cat>~/.tmux.conf <<EOF
+run <<'BASH'
+cat>~/.tmux.conf <<'EOF'
 set -g default-terminal "screen"
 BASH
 
