@@ -16,8 +16,14 @@ token = ""
 bind_addr = "127.0.0.1:10801"
 nodelay = true
 
+[server.services.http]
+type = "tcp"
+token = ""
+bind_addr = "127.0.0.1:10802"
+nodelay = true
+
 [server.services.vless]
 type = "tcp"
 token = ""
-bind_addr = "0.0.0.0:0"
+bind_addr = "0.0.0.0:10803"
 nodelay = true
