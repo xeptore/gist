@@ -139,7 +139,7 @@ set -g default-terminal "screen"
 EOF
 BASH
 
-run_bail 'systemctl disable --now unattended-upgrades.service'
+run 'systemctl disable --now unattended-upgrades.service'
 
 run_bail 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
 run_bail 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
