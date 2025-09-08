@@ -28,7 +28,7 @@ run_bail() {
 run_bail 'cd /root'
 
 run_bail 'apt update && apt upgrade -y && apt autoremove -y && apt clean -y'
-run_bail 'apt install -y jq net-tools unzip curl tree wireguard wireguard-tools nload btop'
+run_bail 'apt install -y jq net-tools unzip curl tree wireguard wireguard-tools nload btop ufw'
 
 run_bail 'curl -sfL --tlsv1.3 --proto '=https' -o .bash_profile https://gist.xeptore.dev/.bash_profile'
 run_bail 'source .bash_profile'
