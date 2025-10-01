@@ -103,6 +103,8 @@ ufw rule allow in on "$if" proto tcp to "$ip/32" port ? comment 'Rathole - X'
 
 ufw rule allow in on "$if" proto tcp to "$ip/32" port 80 comment 'HTTP'
 ufw rule allow in on "$if" proto tcp to "$ip/32" port 443 comment 'HTTPS'
+
+ufw enable
 EOF
 chmod +x ~/ufw.sh
 BASH
