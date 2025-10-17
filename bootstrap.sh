@@ -47,7 +47,7 @@ run_bail 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install
 
 run_bail 'mkcd /root/xray'
 run_bail 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install-xray.sh | bash'
-run_bail 'curl -sSfL --tlsv1.3 --proto '=https' -o server.json https://gist.xeptore.dev/xray/server.json'
+run_bail 'curl -sSfL --tlsv1.3 --proto '=https' -o config.json https://gist.xeptore.dev/xray/config.json'
 
 run_bail 'mkcd /root/rathole'
 run_bail 'curl -sSfL --tlsv1.3 --proto '=https' https://gist.xeptore.dev/install-rathole.sh | bash'
