@@ -1,0 +1,36 @@
+conky.config = {
+    alignment = 'bottom_right',
+    background = false,
+    border_width = 0,
+    cpu_avg_samples = 2,
+    diskio_avg_samples = 10,
+    double_buffer = true,
+    draw_borders = true,
+    draw_graph_borders = false,
+    draw_outline = true,
+    draw_shades = false,
+    pad_percents = 0,
+    border_inner_margin = 7,
+    gap_x = 25,
+    gap_y = 60,
+    minimum_width = 0,
+    minimum_height = 0,
+    net_avg_samples = 2,
+    out_to_console = false,
+    out_to_stderr = false,
+    own_window = true,
+    own_window_argb_visual = true,
+    own_window_transparent = true,
+    own_window_type = 'utility',
+    own_window_hints = 'above',
+    update_interval = 1.0,
+    use_xft = true,
+    xftalpha = 0.8,
+    xftfont = 'Ubuntu:size=10',
+};
+
+conky.text = [[
+${color grey}CPU: $color${cpu}%
+${color grey}RAM: $color${mem}MB / ${memmax}MB
+${color grey}Top: $color${top name 1}
+]];
